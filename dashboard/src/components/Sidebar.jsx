@@ -40,7 +40,7 @@ function SideBar() {
         <ul className="pt-6">
           <li className="">
             <Link
-             href={"/"}
+             href={"/documentos"}
               className="flex text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md"
             >
               <img className="w-8 h-8" src={documento} alt="" />
@@ -53,7 +53,7 @@ function SideBar() {
           </li>
           <li>
             <Link
-              href={"/"}
+              href={"/solicitudes"}
               className="flex text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md"
             >
               <img className="w-8 h-8 " src={solicitud} alt="" />
@@ -66,7 +66,7 @@ function SideBar() {
           </li>
           <li>
             <Link
-              href={"/"}
+              href={"/usuarios"}
               className="flex text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md"
             >
               <img className="w-8 h-8" src={user} alt="" />

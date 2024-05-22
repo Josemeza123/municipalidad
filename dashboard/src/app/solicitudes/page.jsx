@@ -8,8 +8,8 @@ async function loadSolicitudes() {
 async function SolicitudesPage() {
   const solicitudes = await loadSolicitudes();
   return (
-    <div>
-      <table>
+    <div className="p-10">
+      <table className="w-full h-full auto border-collapse border-slate-500">
         <thead>
           <tr>
             <th>Código</th>

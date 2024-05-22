@@ -1,14 +1,15 @@
 import React from 'react'
+import CeldaTabla from './ui/CeldaTabla'
 
 function UsuariosList({usuario}) {
   return (
     <tr>
-    <td>{usuario.codigo}</td>
-    <td>{usuario.usuario}</td>
-    <td>{usuario.apellidos}</td>
-    <td>{usuario.nombres}</td>
-    <td>{usuario.telefono}</td>
-    <td>{usuario.direccion}</td>
+    <CeldaTabla>{usuario.codigo}</CeldaTabla>
+    <CeldaTabla>{usuario.usuario}</CeldaTabla>
+    <CeldaTabla>{usuario.apellidos}</CeldaTabla>
+    <CeldaTabla>{usuario.nombres}</CeldaTabla>
+    <CeldaTabla>{usuario.telefono}</CeldaTabla>
+    <CeldaTabla>{usuario.direccion}</CeldaTabla>
   </tr>
   )
 }

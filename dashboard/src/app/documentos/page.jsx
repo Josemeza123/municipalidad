@@ -9,8 +9,8 @@ async function loadDocumentos() {
 async function DocumentosPage() {
   const documentos = await loadDocumentos();
   return (
-    <div>
-      <table>
+    <div className="p-10">
+      <table className="w-full h-full auto border-collapse border-slate-500">
         <thead>
           <tr>
             <th>Código</th>
