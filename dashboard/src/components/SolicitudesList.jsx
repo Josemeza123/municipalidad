@@ -1,14 +1,14 @@
-import React from "react";
+import CeldaTabla from "./ui/CeldaTabla";
 
 function SolicitudesList({ solicitud }) {
   return (
     <tr>
-      <td>{solicitud.codigo}</td>
-      <td>{solicitud.fecha_registro}</td>
-      <td>{solicitud.interesado}</td>
-      <td>{solicitud.tipo_doc}</td>
-      <td>{solicitud.oficina_destino}</td>
-      <td>{solicitud.ubicacion}</td>
+      <CeldaTabla>{solicitud.codigo}</CeldaTabla>
+      <CeldaTabla>{solicitud.fecha_registro}</CeldaTabla>
+      <CeldaTabla>{solicitud.interesado}</CeldaTabla>
+      <CeldaTabla>{solicitud.tipo_doc}</CeldaTabla>
+      <CeldaTabla>{solicitud.oficina_destino}</CeldaTabla>
+      <CeldaTabla>{solicitud.ubicacion}</CeldaTabla>
     </tr>
   );
 }

@@ -1,17 +1,18 @@
 import React from "react";
+import CeldaTabla from "./ui/CeldaTabla";
 
 function DocumentosList({ documento }) {
   return (
     <tr>
-      <td>{documento.codigo}</td>
-      <td>{documento.fecha_registro}</td>
-      <td>{documento.dni}</td>
-      <td>{documento.tipo_doc}</td>
-      <td>{documento.num_doc}</td>
-      <td>{documento.num_folios}</td>
-      <td>{documento.oficina_destino}</td>
-      <td>{documento.descripcion}</td>
-      <td>{documento.ubicacion}</td>
+      <CeldaTabla>{documento.codigo}</CeldaTabla>
+      <CeldaTabla>{documento.fecha_registro}</CeldaTabla>
+      <CeldaTabla>{documento.dni}</CeldaTabla>
+      <CeldaTabla>{documento.tipo_doc}</CeldaTabla>
+      <CeldaTabla>{documento.num_doc}</CeldaTabla>
+      <CeldaTabla>{documento.num_folios}</CeldaTabla>
+      <CeldaTabla>{documento.oficina_destino}</CeldaTabla>
+      <CeldaTabla>{documento.descripcion}</CeldaTabla>
+      <CeldaTabla>{documento.ubicacion}</CeldaTabla>
     </tr>
   );
 }

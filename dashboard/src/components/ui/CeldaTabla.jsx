@@ -1,7 +1,5 @@
-import React from "react";
-
-function CeldaTabla() {
-  return <div></div>;
+function CeldaTabla({ children }) {
+  return <td>{children}</td>;
 }
 
 export default CeldaTabla;
