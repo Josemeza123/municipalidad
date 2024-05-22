@@ -8,7 +8,6 @@ async function loadDocumentos() {
 
 async function DocumentosPage() {
   const documentos = await loadDocumentos();
-  console.log(documentos);
   return (
     <div>
       <table>

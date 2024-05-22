@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import imagen from "./logo-muni.png";
-import documento from "./documento.svg";
-import solicitud from "./solicitud.svg";
-import user from "./user.svg";
+import imagen from "@/public/logo-muni.png";
+import documento from "@/public/documento.svg";
+import solicitud from "@/public/solicitud.svg";
+import user from "@/public/user.svg";
 import Link from "next/link";
 
 function SideBar() {
