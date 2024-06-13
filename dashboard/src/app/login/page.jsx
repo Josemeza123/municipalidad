@@ -28,7 +28,7 @@ function Login() {
     );
     if (usuarioEncontrado) {
       alert("Bienvenido");
-router.push("/dash/documentos");
+router.push("/documentos");
     } else {
       alert("Usuario o contraseña incorrectos");
     }
