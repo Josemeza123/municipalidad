@@ -1,5 +1,6 @@
 import SideBar from "@/src/components/Sidebar";
 import UsuariosList from "@/src/components/UsuariosList";
+import ButtonUsuarios from "@/src/components/ui/ButtonUsuarios";
 import axios from "axios";
 
 async function loadUsuarios() {
@@ -16,6 +17,7 @@ async function UsuariosPage() {
         <SideBar />
       </div>
       <div className="p-8 w-full">
+        <ButtonUsuarios />
         <table className="w-full auto border-collapse border-slate-500 ">
           <thead>
             <tr>

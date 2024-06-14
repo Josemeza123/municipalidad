@@ -5,6 +5,7 @@ import documento from "@/public/documento.svg";
 import solicitud from "@/public/solicitud.svg";
 import user from "@/public/user.svg";
 import Link from "next/link";
+import Image from "next/image";
 
 function SideBar() {
   const [open, setOpen] = useState(true);
@@ -15,7 +16,7 @@ function SideBar() {
           open ? "w-72" : "w-20"
         } duration-300 h-screen bg-dark-purple relative p-5 pt-8`}
       >
-        <img
+        <Image
           src={imagen}
           alt=""
           className={`absolute cursor-pointer rounded-full -right-3 top-9 w-7 border-2 border-dark-purple ${
@@ -24,13 +25,13 @@ function SideBar() {
           onClick={() => setOpen(!open)}
         />
         <div className="flex gap-x-4 items-center">
-          <img
+          <Image
             src={imagen}
             alt=""
             className={`cursor-pointer duration-500 w-20`}
           />
           <h1
-            className={`text-white origin-left font-medium text-xl duration-300 ${
+            className={`text-black origin-left font-medium text-xl duration-300 ${
               !open && "scale-0"
             }`}
           >
@@ -40,14 +41,14 @@ function SideBar() {
         <ul className="pt-6">
           <li className="">
             <Link
-             href={"/documentos"}
+              href={"/documentos"}
               className="flex text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md"
             >
-              <img className="w-8 h-8" src={documento} alt="" />
+              <Image className="w-8 h-8" src={documento} alt="" />
               <span
-                className={` ${!open && "hidden"} origin-left duration-200`}
+                className={` ${!open && "hidden"} origin-left duration-200 text-black`}
               >
-                Document
+                Documentos
               </span>
             </Link>
           </li>
@@ -56,9 +57,9 @@ function SideBar() {
               href={"/solicitudes"}
               className="flex text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md"
             >
-              <img className="w-8 h-8 " src={solicitud} alt="" />
+              <Image className="w-8 h-8 " src={solicitud} alt="" />
               <span
-                className={` ${!open && "hidden"} origin-left duration-200`}
+                className={` ${!open && "hidden"} origin-left duration-200 text-black`}
               >
                 Solicitudes
               </span>
@@ -69,9 +70,9 @@ function SideBar() {
               href={"/usuarios"}
               className="flex text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-light-white rounded-md"
             >
-              <img className="w-8 h-8" src={user} alt="" />
+              <Image className="w-8 h-8" src={user} alt="" />
               <span
-                className={` ${!open && "hidden"} origin-left duration-200`}
+                className={` ${!open && "hidden"} origin-left duration-200 text-black`}
               >
                 Usuarios
               </span>

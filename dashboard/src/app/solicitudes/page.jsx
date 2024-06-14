@@ -1,5 +1,6 @@
 import SideBar from "@/src/components/Sidebar";
 import SolicitudesList from "@/src/components/SolicitudesList";
+import ButtonSolicitudes from "@/src/components/ui/ButtonSolicitudes";
 import axios from "axios";
 
 async function loadSolicitudes() {
@@ -14,6 +15,7 @@ async function SolicitudesPage() {
         <SideBar />
       </div>
       <div className="p-8 w-full">
+        <ButtonSolicitudes />
         <table className="w-full auto border-collapse border-slate-500">
           <thead>
             <tr>
