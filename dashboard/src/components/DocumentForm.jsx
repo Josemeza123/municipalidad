@@ -32,10 +32,10 @@ function DocumentForm() {
           codigo: res.data.codigo,
           fecha_registro: res.data.fecha_registro,
           dni: res.data.dni,
-          tipo_documento: res.data.tipo_documento,
-          numero_documento: res.data.numero_documento,
-          numero_folio: res.data.numero_folio,
-          oficina_destinataria: res.data.oficina_destinataria,
+          tipo_doc: res.data.tipo_documento,
+          num_doc: res.data.numero_documento,
+          num_folios: res.data.numero_folio,
+          oficina_destino: res.data.oficina_destinataria,
           descripcion: res.data.descripcion,
           ubicacion: res.data.ubicacion,
         });
@@ -57,7 +57,6 @@ function DocumentForm() {
 
   return (
     <div className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
-     
       <form
         ref={form}
         onSubmit={handleSubmit}
@@ -65,7 +64,7 @@ function DocumentForm() {
       >
         <div className="col-span-6 sm:col-span-3">
           <label
-            for="fecha_registro"
+            htmlFor="fecha_registro"
             className="block text-sm font-medium text-gray-700"
           >
             Fecha de Registro
@@ -82,7 +81,7 @@ function DocumentForm() {
         </div>
         <div className="col-span-6 sm:col-span-3">
           <label
-            for="codigo"
+            htmlFor="codigo"
             className="block text-sm font-medium text-gray-700"
           >
             Código
@@ -98,7 +97,10 @@ function DocumentForm() {
           />
         </div>
         <div className="col-span-6 sm:col-span-3">
-          <label for="dni" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="dni"
+            className="block text-sm font-medium text-gray-700"
+          >
             DNI
           </label>
           <input
@@ -113,15 +115,15 @@ function DocumentForm() {
         </div>
         <div className="col-span-6 sm:col-span-3">
           <label
-            for="tipo_documento"
+            htmlFor="tipo_doc"
             className="block text-sm font-medium text-gray-700"
           >
             Tipo de Documento
           </label>
           <input
             type="text"
-            id="tipo_documento"
-            name="tipo_documento"
+            id="tipo_doc"
+            name="tipo_doc"
             value={documento.tipo_documento}
             onChange={handleChange}
             placeholder="Tipo de Documento"
@@ -130,15 +132,15 @@ function DocumentForm() {
         </div>
         <div className="col-span-6 sm:col-span-3">
           <label
-            for="numero_documento"
+            htmlFor="num_doc"
             className="block text-sm font-medium text-gray-700"
           >
             Número de Documento
           </label>
           <input
             type="text"
-            id="numero_documento"
-            name="numero_documento"
+            id="num_doc"
+            name="num_doc"
             value={documento.numero_documento}
             onChange={handleChange}
             placeholder="Número de Documento"
@@ -147,15 +149,15 @@ function DocumentForm() {
         </div>
         <div className="col-span-6 sm:col-span-3">
           <label
-            for="numero_folio"
+            htmlFor="num_folios"
             className="block text-sm font-medium text-gray-700"
           >
             Número de Folio
           </label>
           <input
             type="text"
-            id="numero_folio"
-            name="numero_folio"
+            id="num_folios"
+            name="num_folios"
             value={documento.numero_folio}
             onChange={handleChange}
             placeholder="Número de Folio"
@@ -164,15 +166,15 @@ function DocumentForm() {
         </div>
         <div className="col-span-6 sm:col-span-3">
           <label
-            for="oficina_destinataria"
+            htmlFor="oficina_destino"
             className="block text-sm font-medium text-gray-700"
           >
             Oficina Destinataria
           </label>
           <input
             type="text"
-            id="oficina_destinataria"
-            name="oficina_destinataria"
+            id="oficina_destino"
+            name="oficina_destino"
             value={documento.oficina_destinataria}
             onChange={handleChange}
             placeholder="Oficina Destinataria"
@@ -181,7 +183,7 @@ function DocumentForm() {
         </div>
         <div className="col-span-6 sm:col-span-3">
           <label
-            for="descripcion"
+            htmlFor="descripcion"
             className="block text-sm font-medium text-gray-700"
           >
             Descripción
@@ -198,7 +200,7 @@ function DocumentForm() {
         </div>
         <div className="col-span-6 sm:col-span-3">
           <label
-            for="ubicacion"
+            htmlFor="ubicacion"
             className="block text-sm font-medium text-gray-700"
           >
             Ubicación
